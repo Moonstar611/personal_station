@@ -3,6 +3,6 @@ local_weather
 node_modules
 server_exp.js
 data
-.env
+
 test.js
 home_page
