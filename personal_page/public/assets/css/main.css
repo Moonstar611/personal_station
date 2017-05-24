@@ -3044,3 +3044,10 @@
         footer{
             margin-top:-300px;
         }
+        #some{
+        	font-size: 10px;
+        }
+        #some2{
+        	font-size: 10px;
+        	visibility: hidden;
+        }
