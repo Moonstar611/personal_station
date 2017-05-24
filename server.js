@@ -87,12 +87,12 @@ app.use("/stock_chart", function(req,res,next){
 app.use("/voting_app", function(req,res,next){
     res.sendFile(process.cwd()+"/voting_app/public/index.html");
 });
-/*
-app.use('/', function(req,res){
+
+app.get('/', function(req,res){
     console.log('homepage is visited');
-    res.sendFile(process.cwd()+'/home_page/index.html');
+    res.sendFile(process.cwd()+'/personal_page/index.html');
 });
-*/
+
 
 
 
