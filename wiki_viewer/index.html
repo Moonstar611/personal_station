@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Wikipedia Viewer</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--fonts-->
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Signika:b|Merriweather+Sans:b|Droid+Sans:b|Yellowtail|Karla:i|Orbitron:b&effect=ice">
+        <!--CSS-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">        
+        <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/w_v/css/wiki_viewer.css">
+        <!--JS-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="/w_v/js/wiki_viewer.js"></script>
+        
+    </head>
+    <body>
+        <h1 class="title">
+            Explore the Wikipedia
+        </h1>
+        <div class="container-fluid">
+            <div class="container mainframe col-lg-10 col-lg-offset-1">
+                <div class="searchbox col-lg-3 col-sm-4 col-xs-5">
+                    <div class="searchboxbar">
+                        <div class="input-group">
+
+                            <input type="text" class="form-control" id="keywords" placeholder="Search">
+                            <div class="input-group-btn">
+                                <button class="btn btn-warning" id="searchbutton" title="Search"><i class="glyphicon glyphicon-search"></i></button>
+                                <button class="btn btn-danger" id="clearbutton" title="Clear"><i class="glyphicon glyphicon-remove"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="searchboxlist" id="list">
+                        <!--below are items-->
+                        <!--<a class="anchor" href="#" target="screen" id="a1">
+                            <div class="item">
+                                <h5 class="itemtitle" id="title1">asd</h5>
+                                <p class="itembody" id="body1">asd</p>
+                            </div>
+                        </a>-->
+
+                        <!--above are items-->
+                    </div>
+                </div>
+                <div class="pageviewer col-lg-9 col-sm-8 col-xs-7">
+                    <div class="pageviewerbar">
+                        <div class="btn-group btn-group-justified">
+                            <a href="https://en.wikipedia.org/wiki/Special:Random" class="btn btn-primary" title="Pick a random page" id="randombutton" target="screen"><span class="glyphicon glyphicon-refresh"></span></a>
+                            <a href="#" class="btn btn-success" title="Read it in full page" id="fullpagebutton" ><span class="glyphicon glyphicon-new-window"></span></a>
+                        </div>
+                    </div>
+                    <iframe class="pageviewerwindow" id="frame" name="screen" src="https://en.wikipedia.org/wiki/Special:Random">            
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <footer> 
+
+            <div>Created by <strong><a href="/home" style="text-decoration: none" target="_blank">QIAOCHU WANG</a></strong></div>
+        </footer>
+    </body>
+</html>

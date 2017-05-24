@@ -1,0 +1,38 @@
+{
+  "name": "my_home_page",
+  "version": "1.0.0",
+  "description": "Qiaochu Wang's home page",
+  "main": "server.js",
+  "author": "Qiaochu Wang <qiaochu1990@gmail.com>",
+  "dependencies": {
+    "angular-chart.js": "^1.1.1",
+    "angular-cookie": "^4.1.0",
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.3",
+    "express-session": "^1.15.3",
+    "mongodb": "^2.2.26",
+    "mongoose": "^4.7.6",
+    "multer": "^1.3.0",
+    "ng-token-auth": "0.0.30",
+    "passport": "^0.3.2",
+    "passport-twitter": "^1.0.4",
+    "path": "^0.12.7",
+    "satellizer": "^0.15.5",
+    "socket.io": "^2.0.1"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "devDependencies": {},
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Moonstar611/my_home_page.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Moonstar611/my_home_page/issues"
+  },
+  "homepage": "https://github.com/Moonstar611/my_home_page#readme"
+}
