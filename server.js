@@ -21,7 +21,7 @@ var VApassportConfig = require(process.cwd() + "/voting_app/server/config/passpo
 var PProutes = require(process.cwd()+"/personal_page/server/server_router.js")
 //connect mongoDB
 //var db = mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/mydb")//connect database
-var db = mongoose.connect("mongodb://qiaochu:qwertyuiop2004@ds161190.mlab.com:61190/heroku_9b7f65zt")
+var db = mongoose.connect("mongodb://qiaochu:qwertyuiop2004@ds151951.mlab.com:51951/heroku_tchnpbjv")
 
 //server start
 var server = http.createServer(app); //create server
